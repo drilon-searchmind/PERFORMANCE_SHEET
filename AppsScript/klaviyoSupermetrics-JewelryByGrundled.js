@@ -1,6 +1,5 @@
 function myFunction() {
   var spreadsheet = SpreadsheetApp.getActiveSpreadsheet();
-
   var sourceSheet = spreadsheet.getSheetByName(
     "Grundled - All Data - Campaigns"
   );
@@ -8,6 +7,7 @@ function myFunction() {
 
   targetSheet.clearContents();
 
+  // TODO: Update the date range to be dynamic
   var data = sourceSheet.getDataRange().getValues();
   var startDate = new Date("2025-02-01");
   var endDate = new Date("2025-02-28");
