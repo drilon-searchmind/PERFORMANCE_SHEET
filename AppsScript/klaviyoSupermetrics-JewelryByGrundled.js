@@ -9,6 +9,10 @@ function myFunction() {
     targetSheet.clearContents();
 
 	// TODO: update the date range to be dynamic based on the current date
+	// var today = new Date();
+	// var startDate = new Date(today.getFullYear(), today.getMonth(), 1);	
+	// var endDate = new Date(today.getFullYear(), today.getMonth() + 1, 0);
+	
     var data = sourceSheet.getDataRange().getValues();
     var startDate = new Date("2025-02-01");
     var endDate = new Date("2025-02-28");
